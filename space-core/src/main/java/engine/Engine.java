@@ -2,8 +2,8 @@ package engine;
 
 import engine.util.Time;
 import engine.util.Vector2D;
-import engine.graphics.Frame;
-import engine.graphics.Panel;
+import engine.core.graphics.Frame;
+import engine.core.graphics.Panel;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;

@@ -1,6 +1,7 @@
 module com.example.spacecore {
     requires javafx.controls;
     requires javafx.fxml;
+    requires javafx.media;
     requires java.desktop;
 
 
@@ -10,6 +11,6 @@ module com.example.spacecore {
     opens space_core to javafx.fxml;
     exports engine.util;
     opens engine.util to javafx.fxml;
-    exports engine.graphics;
-    opens engine.graphics to javafx.fxml;
+    exports engine.core.graphics;
+    opens engine.core.graphics to javafx.fxml;
 }
