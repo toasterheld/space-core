@@ -1,9 +1,12 @@
 package engine;
 
+import engine.scene.Scene;
+import engine.scene.SceneManager;
 import engine.util.Time;
 import engine.util.Vector2D;
 import engine.io.graphics.Frame;
 import engine.io.graphics.Panel;
+import space_core.example.ExampleMaster;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -13,9 +16,16 @@ public class Engine implements ActionListener {
 
     private Timer thread;
 
+    private Scene startScene;
+
 
     public void init() {
         createWindow();
+
+        SceneManager.init();
+
+        startScene = new ExampleMaster();
+        SceneManager.setScene(startScene);
     }
 
     public void startGameLoop() {
@@ -29,15 +39,21 @@ public class Engine implements ActionListener {
         // update
         Time.updateDeltaTime();
 
+        SceneManager.update();
+
 
         // render
+        SceneManager.render();
+
         System.out.println("Delta Time: " + Time.getDeltaTime() + " seconds | " + "Passed: " + Time.getPassedTime());
     }
 
 
     private void createWindow() {
-        Frame frame = new Frame("Engine", new Vector2D(800, 600));
-        Panel panel = new Panel();
+        Vector2D size = new Vector2D(800, 600);
+
+        Frame frame = new Frame("Engine", size);
+        Panel panel = new Panel(size);
         frame.addPanel(panel);
     }
 }
