@@ -11,6 +11,6 @@ module com.example.spacecore {
     opens space_core to javafx.fxml;
     exports engine.util;
     opens engine.util to javafx.fxml;
-    exports engine.core.graphics;
-    opens engine.core.graphics to javafx.fxml;
+    exports engine.io.graphics;
+    opens engine.io.graphics to javafx.fxml;
 }

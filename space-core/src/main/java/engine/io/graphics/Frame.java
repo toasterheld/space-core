@@ -1,4 +1,4 @@
-package engine.core.graphics;
+package engine.io.graphics;
 
 import engine.util.Vector2D;
 

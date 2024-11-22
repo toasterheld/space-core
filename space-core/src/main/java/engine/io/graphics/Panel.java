@@ -1,4 +1,4 @@
-package engine.core.graphics;
+package engine.io.graphics;
 
 import javax.swing.*;
 import java.awt.*;

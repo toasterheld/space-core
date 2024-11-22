@@ -1,4 +1,4 @@
-package engine.core.input;
+package engine.io.input;
 
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;

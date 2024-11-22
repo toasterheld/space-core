@@ -1,4 +1,4 @@
-package engine.core.audio;
+package engine.io.audio;
 
 import engine.util.Util;
 import javafx.scene.media.MediaPlayer;
