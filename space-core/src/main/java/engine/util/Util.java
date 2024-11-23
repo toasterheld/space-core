@@ -13,6 +13,9 @@ public class Util {
 
     // get the buffered image using the path to it. f.e. "/images/image.png"
     public static BufferedImage getBufferedImage(String path) {
+        if(Util.class.getResource(path) == null && path != "/textures/missing.png"){
+            return getBufferedImage("/textures/missing.png");
+        }
         // get the image icon
         ImageIcon icon = new ImageIcon(Util.class.getResource(path));
         Image img = icon.getImage();

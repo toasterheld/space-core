@@ -7,9 +7,11 @@ import java.util.ArrayList;
 
 public class Entity {
     protected Vector2D pos;
-    protected ArrayList<Component> components;
+    protected ArrayList<Component> components = new ArrayList<Component>();
 
-
+    public Entity(){
+        pos = new Vector2D(0,0);
+    }
 
     protected Component addComponent(Component component){
         components.add(component);
