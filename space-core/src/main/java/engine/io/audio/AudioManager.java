@@ -123,4 +123,9 @@ public class AudioManager {
             }
         } catch (Exception ignored) {}
     }
+
+
+    public static void destroy(int id){
+        sounds.remove(id);
+    }
 }

@@ -29,6 +29,7 @@ public class Engine implements ActionListener {
         ConfigManager.init();
 
         createWindow();
+
       
         Renderer.init(panel);  
       
@@ -50,13 +51,16 @@ public class Engine implements ActionListener {
         // update
         Time.updateDeltaTime();
 
+        Renderer.clear();
+
         SceneManager.update();
       
       
         // render
         SceneManager.render();
+        Renderer.render();
 
-        System.out.println("Delta Time: " + Time.getDeltaTime() + " seconds | " + "Passed: " + Time.getPassedTime());
+        //System.out.println("Delta Time: " + Time.getDeltaTime() + " seconds | " + "Passed: " + Time.getPassedTime());
     }
 
 

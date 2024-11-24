@@ -5,9 +5,12 @@ import engine.entity.Entity;
 import engine.io.graphics.Renderer;
 import engine.util.Vector2D;
 
+import java.awt.*;
+
 public class Rectangle extends Component {
 
     Vector2D size = new Vector2D(0,0);
+    Color color = Color.BLACK;
 
     public Rectangle(Entity parent) {
         super(parent);
@@ -16,7 +19,7 @@ public class Rectangle extends Component {
 
     @Override
     public void render(){
-        Renderer.drawRectangle(getPos(), size);
+        Renderer.drawRectangle(getPos(), size, color);
     }
 
     public void setSize(Vector2D size) {
@@ -25,5 +28,13 @@ public class Rectangle extends Component {
 
     public Vector2D getSize() {
         return size;
+    }
+
+    public void setColor(Color color) {
+        this.color = color;
+    }
+
+    public Color getColor() {
+        return color;
     }
 }

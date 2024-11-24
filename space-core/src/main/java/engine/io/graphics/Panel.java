@@ -17,8 +17,8 @@ public class Panel extends JPanel {
     }
 
     public void paint(Graphics g) {
-        super.paint(g);
         g2d = (Graphics2D) g;
+        g2d.drawImage(Renderer.getBufferedImage(), 0,0,null);
     }
 
     public Graphics2D getG2d() {
