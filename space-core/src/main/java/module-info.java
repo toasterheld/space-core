@@ -3,6 +3,7 @@ module com.example.spacecore {
     requires javafx.fxml;
     requires javafx.media;
     requires java.desktop;
+    requires com.google.gson;
 
 
     opens engine to javafx.fxml;
