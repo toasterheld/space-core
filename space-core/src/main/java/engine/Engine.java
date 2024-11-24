@@ -23,6 +23,7 @@ public class Engine implements ActionListener {
 
     public void init() {
         createWindow();
+
       
         Renderer.init(panel);  
       
@@ -49,8 +50,9 @@ public class Engine implements ActionListener {
       
         // render
         SceneManager.render();
+        Renderer.render();
 
-        System.out.println("Delta Time: " + Time.getDeltaTime() + " seconds | " + "Passed: " + Time.getPassedTime());
+        //System.out.println("Delta Time: " + Time.getDeltaTime() + " seconds | " + "Passed: " + Time.getPassedTime());
     }
 
 
@@ -58,7 +60,7 @@ public class Engine implements ActionListener {
         Vector2D size = new Vector2D(800, 600);
 
         Frame frame = new Frame("Engine", size);
-        Panel panel = new Panel(size);
+        panel = new Panel(size);
 
         frame.addPanel(panel);
     }

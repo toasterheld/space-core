@@ -1,19 +1,26 @@
 package space_core.example;
 
+import engine.entity.Entity;
 import engine.scene.Scene;
 
 public class ExampleMaster extends Scene {
 
+
+        ExampleEntity entity = (ExampleEntity) addEntity(new ExampleEntity());
+
+        @Override
         public void init() {
-            System.out.println("ExampleMaster init");
+                super.init();
         }
 
+        @Override
         public void update() {
-            System.out.println("ExampleMaster update");
+                super.update();
         }
 
+        @Override
         public void render() {
-            System.out.println("ExampleMaster render");
+                super.render();
         }
         
         public boolean destroy() {

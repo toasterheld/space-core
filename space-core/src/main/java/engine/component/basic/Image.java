@@ -16,6 +16,7 @@ public class Image extends Component {
 
     public Image(Entity parent){
         super(parent);
+        image = Util.getBufferedImage("/textures/missing.png");
     }
 
 

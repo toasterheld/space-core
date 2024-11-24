@@ -20,16 +20,20 @@ public class Entity {
 
 
     public void init(){
-
+        for(Component component : components) {
+            component.init();
+        }
     }
 
     public void update(){
-
+        for(Component component : components) {
+            component.update();
+        }
     }
 
     public void render(){
-        for(int i = 0; i < components.size(); i++){
-            components.get(i).render();
+        for(Component component : components) {
+            component.render();
         }
     }
 

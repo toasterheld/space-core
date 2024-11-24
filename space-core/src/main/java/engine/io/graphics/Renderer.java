@@ -10,9 +10,12 @@ public class Renderer {
 
     private static Panel panel;
     private static Graphics2D g2d;
+    private static BufferedImage bufferedImage;
 
     public static void init(Panel p) {
         panel = p;
+        bufferedImage = new BufferedImage(p.getWidth(), p.getHeight(), BufferedImage.TYPE_INT_ARGB);
+        g2d = bufferedImage.createGraphics();
     }
 
 
@@ -21,6 +24,10 @@ public class Renderer {
     }
 
     public static void drawImage(BufferedImage image, Vector2D pos, Vector2D size){
+        if(size == null){
+            drawImage(image, pos);
+            return;
+        }
         g2d.drawImage(image, (int) pos.getX(), (int)pos.getY(), (int)size.getX(), (int)size.getY(),null);
     }
 
@@ -39,6 +46,7 @@ public class Renderer {
             System.err.println("Graphics2D context is not available!");
             return;
         }
+
 
         Font font = new Font(fontFamily, Font.PLAIN, fontSize);
         g2d.setFont(font);
@@ -107,7 +115,8 @@ public class Renderer {
     }
 
 
-    public static void drawRectangle(Vector2D pos, Vector2D size){
+    public static void drawRectangle(Vector2D pos, Vector2D size, Color color){
+        g2d.setColor(color);
         g2d.drawRect((int) pos.getX(), (int) pos.getY(), (int) size.getX(), (int) size.getY());
     }
 
@@ -116,8 +125,12 @@ public class Renderer {
     }
 
 
+    public static BufferedImage getBufferedImage() {
+        return bufferedImage;
+    }
+
     public static void render() {
         panel.repaint();
-        g2d = panel.getG2d();
+        //g2d = panel.getG2d();
     }
 }
