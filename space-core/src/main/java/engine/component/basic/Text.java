@@ -13,7 +13,6 @@ public class Text extends Component {
     private int alignment = 0;
 
 
-
     public Text(Entity parent) {
         super(parent);
     }

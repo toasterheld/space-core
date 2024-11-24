@@ -6,8 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="090099a3-7632-4ded-897a-09d689693682" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/engine/component/Component.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/component/Component.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/engine/entity/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/entity/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/engine/component/basic/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/component/basic/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/engine/component/basic/Collider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/component/basic/Collider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/engine/component/basic/Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/component/basic/Image.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/engine/component/basic/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/component/basic/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/engine/component/basic/Text.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/component/basic/Text.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/engine/io/graphics/Renderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/io/graphics/Renderer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,21 +46,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "5-creating-entity-framework",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;5-creating-entity-framework&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Erik/Github/space-core/space-core/src/main/java/engine/assets/textures&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Erik\Github\space-core\space-core\src\main\java\engine\assets\textures" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="engine.util" />
     </key>
@@ -84,5 +96,15 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

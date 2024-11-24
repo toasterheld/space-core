@@ -107,6 +107,15 @@ public class Renderer {
     }
 
 
+    public static void drawRectangle(Vector2D pos, Vector2D size){
+        g2d.drawRect((int) pos.getX(), (int) pos.getY(), (int) size.getX(), (int) size.getY());
+    }
+
+    public static void drawCircle(Vector2D pos, int radius) {
+        g2d.drawOval((int) pos.getX() - radius, (int) pos.getY() - radius, 2 * radius, 2 * radius);
+    }
+
+
     public static void render() {
         panel.repaint();
         g2d = panel.getG2d();

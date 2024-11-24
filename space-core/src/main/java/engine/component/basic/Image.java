@@ -22,7 +22,7 @@ public class Image extends Component {
     public Image(String path, Entity parent){
         super(parent);
         image = Util.getBufferedImage(path);
-        size = new Vector2D(0,0);
+        size = new Vector2D(image.getWidth(),image.getHeight());
     }
 
 
