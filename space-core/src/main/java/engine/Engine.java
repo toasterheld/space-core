@@ -71,7 +71,7 @@ public class Engine implements ActionListener {
         );
 
         Frame frame = new Frame(ConfigManager.getGameConfigValue("window.title"), size);
-        Panel panel = new Panel(size);
+        panel = new Panel(size);
 
         frame.addPanel(panel);
     }
