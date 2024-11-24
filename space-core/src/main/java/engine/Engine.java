@@ -45,6 +45,8 @@ public class Engine implements ActionListener {
         // update
         Time.updateDeltaTime();
 
+        Renderer.clear();
+
         SceneManager.update();
       
       

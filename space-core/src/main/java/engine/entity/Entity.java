@@ -41,4 +41,9 @@ public class Entity {
     public Vector2D getPos() {
         return pos;
     }
+
+
+    public void setPos(Vector2D pos) {
+        this.pos = pos;
+    }
 }

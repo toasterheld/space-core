@@ -5,15 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="090099a3-7632-4ded-897a-09d689693682" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/space_core/example/ExampleEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/space_core/example/ExampleEntityObstacle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/engine/Engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/Engine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/engine/component/basic/Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/component/basic/Image.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/engine/component/basic/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/component/basic/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/engine/component/basic/Audio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/component/basic/Audio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/engine/component/basic/Collider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/component/basic/Collider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/engine/entity/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/entity/Entity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/engine/io/graphics/Panel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/io/graphics/Panel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/engine/io/audio/AudioManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/io/audio/AudioManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/engine/io/graphics/Frame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/io/graphics/Frame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/engine/io/graphics/Renderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/io/graphics/Renderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/engine/scene/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/scene/Scene.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/engine/io/input/InputManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/io/input/InputManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/space_core/example/ExampleEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/space_core/example/ExampleEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/space_core/example/ExampleMaster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/space_core/example/ExampleMaster.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,6 +76,7 @@
       <recent name="D:\Erik\Github\space-core\space-core\src\main\java\engine\assets\textures" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="space_core.example" />
       <recent name="engine.util" />
     </key>
   </component>

@@ -129,8 +129,15 @@ public class Renderer {
         return bufferedImage;
     }
 
+    public static void clear(){
+        g2d.setColor(Color.white);
+        g2d.fillRect(0,0, bufferedImage.getWidth(), bufferedImage.getHeight());
+    }
+
     public static void render() {
+
         panel.repaint();
+
         //g2d = panel.getG2d();
     }
 }

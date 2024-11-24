@@ -10,6 +10,7 @@ public class InputManager implements KeyListener {
 
     @Override
     public void keyPressed(KeyEvent e) {
+
         int keyCode = e.getKeyCode();
         pressedKeys.add(keyCode);
     }

@@ -1,6 +1,7 @@
 package engine.io.graphics;
 
 import engine.util.Vector2D;
+import engine.io.input.InputManager;
 
 import javax.swing.*;
 import java.awt.*;
@@ -16,6 +17,11 @@ public class Frame extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         getContentPane().setBackground(new Color(0, 0, 0));
         setVisible(true);
+
+
+        this.setFocusable(true);
+        InputManager keyListener = new InputManager();
+        this.addKeyListener(keyListener);
     }
 
     public void addPanel(Panel panel) {

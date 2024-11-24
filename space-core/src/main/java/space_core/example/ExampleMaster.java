@@ -7,6 +7,7 @@ public class ExampleMaster extends Scene {
 
 
         ExampleEntity entity = (ExampleEntity) addEntity(new ExampleEntity());
+        ExampleEntityObstacle entity2 = (ExampleEntityObstacle) addEntity(new ExampleEntityObstacle());
 
         @Override
         public void init() {
