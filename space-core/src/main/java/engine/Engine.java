@@ -2,6 +2,7 @@ package engine;
 
 import engine.scene.Scene;
 import engine.scene.SceneManager;
+import engine.io.graphics.Renderer;
 import engine.util.Time;
 import engine.util.Vector2D;
 import engine.io.graphics.Frame;
@@ -15,13 +16,16 @@ import java.awt.event.ActionListener;
 public class Engine implements ActionListener {
 
     private Timer thread;
+    private Panel panel;
 
     private Scene startScene;
 
 
     public void init() {
         createWindow();
-
+      
+        Renderer.init(panel);  
+      
         SceneManager.init();
 
         startScene = new ExampleMaster();
@@ -29,6 +33,7 @@ public class Engine implements ActionListener {
     }
 
     public void startGameLoop() {
+
         Time.init();
         thread = new Timer((int) (1000 / Time.getFPS()), this);
         thread.start();
@@ -40,8 +45,8 @@ public class Engine implements ActionListener {
         Time.updateDeltaTime();
 
         SceneManager.update();
-
-
+      
+      
         // render
         SceneManager.render();
 
@@ -54,6 +59,7 @@ public class Engine implements ActionListener {
 
         Frame frame = new Frame("Engine", size);
         Panel panel = new Panel(size);
+
         frame.addPanel(panel);
     }
 }
