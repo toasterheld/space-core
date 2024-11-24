@@ -1,5 +1,6 @@
 package engine;
 
+import engine.save.ConfigManager;
 import engine.scene.Scene;
 import engine.scene.SceneManager;
 import engine.io.graphics.Renderer;
@@ -8,12 +9,15 @@ import engine.util.Vector2D;
 import engine.io.graphics.Frame;
 import engine.io.graphics.Panel;
 import space_core.example.ExampleMaster;
+import com.google.gson.Gson;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Engine implements ActionListener {
+
+    Gson gson = new Gson();
 
     private Timer thread;
     private Panel panel;
@@ -22,13 +26,15 @@ public class Engine implements ActionListener {
 
 
     public void init() {
+        ConfigManager.init();
+
         createWindow();
       
         Renderer.init(panel);  
       
         SceneManager.init();
 
-        startScene = new ExampleMaster();
+        startScene = getStartScene();
         SceneManager.setScene(startScene);
     }
 
@@ -55,11 +61,28 @@ public class Engine implements ActionListener {
 
 
     private void createWindow() {
-        Vector2D size = new Vector2D(800, 600);
+        Vector2D size = new Vector2D(
+                Integer.parseInt(ConfigManager.getGameConfigValue("window.width")),
+                Integer.parseInt(ConfigManager.getGameConfigValue("window.height"))
+        );
 
-        Frame frame = new Frame("Engine", size);
+        Frame frame = new Frame(ConfigManager.getGameConfigValue("window.title"), size);
         Panel panel = new Panel(size);
 
         frame.addPanel(panel);
+    }
+
+    private Scene getStartScene() {
+        try {
+            Class<?> act = Class.forName(ConfigManager.getGameConfigValue("startScene"));
+            return (Scene) act.newInstance();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (InstantiationException e) {
+            throw new RuntimeException(e);
+        } catch (IllegalAccessException e) {
+            throw new RuntimeException(e);
+        }
+        return null;
     }
 }
