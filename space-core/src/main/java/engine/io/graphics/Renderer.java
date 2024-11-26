@@ -134,10 +134,17 @@ public class Renderer {
         g2d.fillRect(0,0, bufferedImage.getWidth(), bufferedImage.getHeight());
     }
 
+
+    public Vector2D getScreenPos(Vector2D worldPos, Vector2D camPos){
+        return worldPos.sub(camPos);
+    }
+
     public static void render() {
 
         panel.repaint();
 
         //g2d = panel.getG2d();
     }
+
+
 }
