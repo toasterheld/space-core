@@ -4,6 +4,7 @@ import engine.component.basic.Collider;
 import engine.component.basic.Image;
 import engine.component.basic.Rectangle;
 import engine.component.basic.Text;
+import engine.component.basic.camera.Camera;
 import engine.entity.Entity;
 import engine.io.input.InputManager;
 import engine.util.Vector2D;
@@ -15,6 +16,7 @@ import java.awt.event.KeyEvent;
 public class ExampleEntity extends Entity {
     private Rectangle rect = (Rectangle) addComponent(new Rectangle(this));
     private Collider collider = (Collider) addComponent(new Collider(this));
+    private Camera cam = (Camera) addComponent(new Camera(this));
 
     @Override
     public void init() {
@@ -31,5 +33,10 @@ public class ExampleEntity extends Entity {
         if(InputManager.isKeyDown(KeyEvent.VK_W)){
             pos.add(new Vector2D(10,0));
         }
+    }
+
+
+    public Camera getCam() {
+        return cam;
     }
 }

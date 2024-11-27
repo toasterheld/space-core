@@ -12,7 +12,7 @@ public class Frame extends JFrame {
     public Frame(String title, Vector2D size) {
         // set up window
         super(title);
-        System.out.println((int) size.getX() + " " + (int) size.getY());
+        //System.out.println((int) size.getX() + " " + (int) size.getY());
         setSize((int) size.getX(), (int) size.getY());
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         getContentPane().setBackground(new Color(0, 0, 0));

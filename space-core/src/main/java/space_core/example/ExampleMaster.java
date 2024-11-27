@@ -3,15 +3,24 @@ package space_core.example;
 import engine.entity.Entity;
 import engine.scene.Scene;
 
+import static engine.component.basic.camera.CameraManager.setActiveCamera;
+
 public class ExampleMaster extends Scene {
 
 
-        ExampleEntity entity = (ExampleEntity) addEntity(new ExampleEntity());
         ExampleEntityObstacle entity2 = (ExampleEntityObstacle) addEntity(new ExampleEntityObstacle());
+
+        ExampleEntity entity = (ExampleEntity) addEntity(new ExampleEntity());
+
 
         @Override
         public void init() {
                 super.init();
+
+                setActiveCamera(entity.getCam());
+
+
+
         }
 
         @Override

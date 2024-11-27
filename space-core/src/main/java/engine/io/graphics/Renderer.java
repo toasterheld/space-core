@@ -1,10 +1,16 @@
 package engine.io.graphics;
 
+import engine.component.basic.camera.CameraManager;
 import engine.util.Vector2D;
 
 import java.awt.*;
 import java.awt.geom.Rectangle2D;
 import java.awt.image.BufferedImage;
+import java.util.Vector;
+
+import engine.component.basic.camera.CameraManager;
+
+import static engine.component.basic.camera.CameraManager.getActiveCamera;
 
 public class Renderer {
 
@@ -20,10 +26,12 @@ public class Renderer {
 
 
     public static void drawImage(BufferedImage image, Vector2D pos){
+        pos = getActiveCamera().getScreenPos(pos);
         g2d.drawImage(image, (int) pos.getX(), (int)pos.getY(), null);
     }
 
     public static void drawImage(BufferedImage image, Vector2D pos, Vector2D size){
+        pos = getActiveCamera().getScreenPos(pos);
         if(size == null){
             drawImage(image, pos);
             return;
@@ -42,6 +50,7 @@ public class Renderer {
      * @param alignment the alignment of the text (0 = left, 1 = center, 2 = right)
      */
     public static void drawText(String text, Vector2D pos, int fontSize, String fontFamily, int alignment) {
+        pos = getActiveCamera().getScreenPos(pos);
         if (g2d == null) {
             System.err.println("Graphics2D context is not available!");
             return;
@@ -116,17 +125,22 @@ public class Renderer {
 
 
     public static void drawRectangle(Vector2D pos, Vector2D size, Color color){
+        pos = getActiveCamera().getScreenPos(pos);
         g2d.setColor(color);
         g2d.drawRect((int) pos.getX(), (int) pos.getY(), (int) size.getX(), (int) size.getY());
     }
 
     public static void drawCircle(Vector2D pos, int radius) {
+        pos = getActiveCamera().getScreenPos(pos);
         g2d.drawOval((int) pos.getX() - radius, (int) pos.getY() - radius, 2 * radius, 2 * radius);
     }
 
 
     public static BufferedImage getBufferedImage() {
         return bufferedImage;
+    }
+    public static Vector2D getBufferSize() {
+        return new Vector2D(bufferedImage.getWidth(), bufferedImage.getHeight());
     }
 
     public static void clear(){
@@ -135,9 +149,6 @@ public class Renderer {
     }
 
 
-    public Vector2D getScreenPos(Vector2D worldPos, Vector2D camPos){
-        return worldPos.sub(camPos);
-    }
 
     public static void render() {
 
