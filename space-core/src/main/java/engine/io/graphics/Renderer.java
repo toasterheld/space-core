@@ -26,17 +26,31 @@ public class Renderer {
 
 
     public static void drawImage(BufferedImage image, Vector2D pos){
-        pos = getActiveCamera().getScreenPos(pos);
-        g2d.drawImage(image, (int) pos.getX(), (int)pos.getY(), null);
+        Vector2D size = new Vector2D(image.getWidth(), image.getHeight());
+        Vector2D screenPos = pos.copy();
+
+        screenPos = getActiveCamera().getScreenPos(screenPos);
+        screenPos = screenPos.sub(new Vector2D(size.copy().div(2)));
+        g2d.drawImage(image, (int) screenPos.getX(), (int)screenPos.getY(), null);
     }
 
     public static void drawImage(BufferedImage image, Vector2D pos, Vector2D size){
-        pos = getActiveCamera().getScreenPos(pos);
+
         if(size == null){
-            drawImage(image, pos);
+            Vector2D size = new Vector2D(image.getWidth(), image.getHeight());
+            Vector2D screenPos = pos.copy();
+
+            screenPos = getActiveCamera().getScreenPos(screenPos);
+            screenPos = screenPos.sub(new Vector2D(size.copy().div(2)));
+            drawImage(image, screenPos);
             return;
         }
-        g2d.drawImage(image, (int) pos.getX(), (int)pos.getY(), (int)size.getX(), (int)size.getY(),null);
+        Vector2D screenPos = pos.copy();
+
+        screenPos = getActiveCamera().getScreenPos(screenPos);
+        screenPos = screenPos.sub(new Vector2D(size.copy().div(2)));
+
+        g2d.drawImage(image, (int) screenPos.getX(), (int)screenPos.getY(), (int)size.getX(), (int)size.getY(),null);
     }
 
 
@@ -125,14 +139,23 @@ public class Renderer {
 
 
     public static void drawRectangle(Vector2D pos, Vector2D size, Color color){
-        pos = getActiveCamera().getScreenPos(pos);
+        Vector2D screenPos = pos.copy();
+
+        screenPos = getActiveCamera().getScreenPos(screenPos);
+        screenPos = screenPos.sub(new Vector2D(size.copy().div(2)));
+
         g2d.setColor(color);
-        g2d.drawRect((int) pos.getX(), (int) pos.getY(), (int) size.getX(), (int) size.getY());
+        g2d.drawRect((int) screenPos.getX(), (int) screenPos.getY(), (int) size.getX(), (int) size.getY());
     }
 
     public static void drawCircle(Vector2D pos, int radius) {
-        pos = getActiveCamera().getScreenPos(pos);
-        g2d.drawOval((int) pos.getX() - radius, (int) pos.getY() - radius, 2 * radius, 2 * radius);
+
+        Vector2D screenPos = pos.copy();
+
+        screenPos = getActiveCamera().getScreenPos(screenPos);
+        screenPos = screenPos.sub(new Vector2D(radius / 2, radius / 2));
+
+        g2d.drawOval((int) screenPos.getX() - radius, (int) screenPos.getY() - radius, 2 * radius, 2 * radius);
     }
 
 
