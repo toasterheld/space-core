@@ -37,7 +37,7 @@ public class Renderer {
     public static void drawImage(BufferedImage image, Vector2D pos, Vector2D size){
 
         if(size == null){
-            Vector2D size = new Vector2D(image.getWidth(), image.getHeight());
+            size = new Vector2D(image.getWidth(), image.getHeight());
             Vector2D screenPos = pos.copy();
 
             screenPos = getActiveCamera().getScreenPos(screenPos);
