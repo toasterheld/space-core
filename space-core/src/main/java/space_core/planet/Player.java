@@ -31,15 +31,16 @@ public class Player extends Entity {
     @Override
     public void update() {
         super.update();
-        if(InputManager.isKeyDown(KeyEvent.VK_W)){
-            pos.add(new Vector2D(0,-speed));
-        }else if(InputManager.isKeyDown(KeyEvent.VK_A)) {
-            pos.add(new Vector2D(-speed, 0));
-        }else if(InputManager.isKeyDown(KeyEvent.VK_S)) {
-            pos.add(new Vector2D(0, +speed));
-        }else if(InputManager.isKeyDown(KeyEvent.VK_D)) {
-            pos.add(new Vector2D(+speed, 0));
-        }
+
+        Vector2D mov = new Vector2D();
+        double currentSpeed = speed;
+
+        if(InputManager.isKeyDown(KeyEvent.VK_W)) mov.add(new Vector2D(0,-currentSpeed));
+        if(InputManager.isKeyDown(KeyEvent.VK_A)) mov.add(new Vector2D(-currentSpeed, 0));
+        if(InputManager.isKeyDown(KeyEvent.VK_S)) mov.add(new Vector2D(0, +currentSpeed));
+        if(InputManager.isKeyDown(KeyEvent.VK_D)) mov.add(new Vector2D(+currentSpeed, 0));
+
+        pos.add(mov);
     }
 
 
