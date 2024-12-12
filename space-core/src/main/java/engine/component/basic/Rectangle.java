@@ -7,20 +7,35 @@ import engine.util.Vector2D;
 
 import java.awt.*;
 
+/**
+ * Represents a rectangle component that can be attached to an entity.
+ * This component allows rendering a rectangle on the screen with a specified size and color.
+ */
 public class Rectangle extends Component {
 
-    Vector2D size = new Vector2D(0,0);
-    Color color = Color.BLACK;
+    private Vector2D size = new Vector2D(0, 0);
+    private Color color = Color.BLACK;
 
+    /**
+     * Constructs a Rectangle component associated with the specified parent entity.
+     * The rectangle is initialized with a default size and color.
+     *
+     * @param parent the parent entity to which this rectangle component belongs
+     */
     public Rectangle(Entity parent) {
         super(parent);
     }
 
-
+    /**
+     * Renders the rectangle at the current position with the specified size and color.
+     * The rendering is handled by the Renderer utility.
+     */
     @Override
-    public void render(){
+    public void render() {
         Renderer.drawRectangle(getPos(), size, color);
     }
+
+    // Getter and Setter methods
 
     public void setSize(Vector2D size) {
         this.size = size;

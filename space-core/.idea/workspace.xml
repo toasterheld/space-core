@@ -5,10 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="090099a3-7632-4ded-897a-09d689693682" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/space_core/planet/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/engine/Engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/Engine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/engine/component/Component.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/component/Component.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/engine/component/basic/Audio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/component/basic/Audio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/engine/component/basic/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/component/basic/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/engine/component/basic/Collider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/component/basic/Collider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/engine/component/basic/Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/component/basic/Image.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/engine/component/basic/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/component/basic/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/engine/component/basic/Text.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/component/basic/Text.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/engine/component/basic/camera/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/component/basic/camera/Camera.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/engine/component/basic/camera/CameraManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/component/basic/camera/CameraManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/engine/entity/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/entity/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/engine/io/audio/AudioManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/io/audio/AudioManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/engine/io/audio/Sound.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/io/audio/Sound.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/engine/io/graphics/Frame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/io/graphics/Frame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/engine/io/graphics/Panel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/io/graphics/Panel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/engine/io/graphics/Renderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/io/graphics/Renderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/engine/io/input/InputManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/io/input/InputManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/engine/save/ConfigManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/save/ConfigManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/engine/scene/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/scene/Scene.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/engine/scene/SceneManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/scene/SceneManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/engine/util/Time.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/util/Time.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/engine/util/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/util/Util.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/space_core/example/ExampleEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/space_core/example/ExampleEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/space_core/example/ExampleEntityObstacle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/space_core/example/ExampleEntityObstacle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/space_core/example/ExampleMaster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/space_core/example/ExampleMaster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/space_core/planet/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/space_core/planet/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +48,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Bxnnxt07"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/toasterheld/space-core",
+    "accountId": "2ce4cf14-deb1-4c81-8b7c-b78ad8287bb2"
+  }
+}]]></component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -43,26 +78,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "13-creating-player",
-    "last_opened_file_path": "D:/Erik/Github/space-core/space-core/src/main/java/engine/assets/textures",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;20-adding-java-doc-commentaries&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Erik/Github/space-core/space-core/src/main/java/engine/assets/textures&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Erik\Github\space-core\space-core\src\main\java\engine\assets\textures" />
