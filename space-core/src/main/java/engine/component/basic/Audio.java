@@ -7,6 +7,10 @@ import engine.io.audio.Mixers;
 import engine.util.Vector2D;
 import javafx.scene.media.MediaPlayer;
 
+/**
+ * Represents an audio component that can be attached to an entity.
+ * This component provides functionality to play sounds with configurable properties such as path, volume, and pan.
+ */
 public class Audio extends Component {
 
     private MediaPlayer mediaPlayer;
@@ -15,15 +19,24 @@ public class Audio extends Component {
     private int volume;
     private int pan;
 
+    /**
+     * Constructs an Audio component associated with the specified parent entity.
+     *
+     * @param parent the parent entity to which this audio component belongs
+     */
     public Audio(Entity parent) {
         super(parent);
     }
 
-
-    public void playSound(){
+    /**
+     * Plays a sound using the current audio settings (path, volume, pan).
+     * The sound is routed through the master audio mixer by default.
+     */
+    public void playSound() {
         AudioManager.addSound(path, volume, pan, Mixers.MASTER);
     }
 
+    // Getter and Setter methods
 
     public int getVolume() {
         return volume;
